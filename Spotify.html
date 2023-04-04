@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Spotify.css">
+    <link rel="stylesheet" href="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="IMGSpotify/spotify_logo2.png">
+    <title>Spotify Clone</title>
+    <style>
+        div.TuBiblioteca:hover .material-symbols-outlined { transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.TuBiblioteca:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.inicio:hover .material-symbols-outlined { transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.inicio:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.buscar:hover .material-symbols-outlined { transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.buscar:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.crearPlaylist:hover .material-symbols-outlined { transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.crearPlaylist:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.tusmegusta:hover .material-symbols-outlined { color:white; cursor: pointer;}
+        div.tusmegusta:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.playlist1:hover .material-symbols-outlined { color:white; cursor: pointer;}
+        div.playlist1:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.playlist2:hover .material-symbols-outlined { transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.playlist2:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.playlist3:hover .material-symbols-outlined { color:white; cursor: pointer;}
+        div.playlist3:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.download:hover .material-symbols-outlined { transition: ease-in 100ms;color:white; cursor: pointer;}
+        div.download:hover  h4{ transition: ease-in 100ms;color:white; cursor: pointer;}
+        
+      </style>
+</head>
+<body>
+    <div class="maindiv">
+    
+    <div class="sidebar">
+        <div class="logo">
+            <img src="IMGSpotify/Spotify_logo.png" alt="logo" width="130"/>
+        </div>
+        
+    
+
+        <div class="principal">
+            <div class="inicio">
+                <span class="material-symbols-outlined">home</span>
+                <h4>Inicio</h4>
+            </div>
+            <div class="buscar">
+                <span class="material-symbols-outlined">search</span>
+                <h4>Buscar</h4>
+            </div>
+            <div class="TuBiblioteca">
+                <span class="material-symbols-outlined">library_music</span>
+                <h4>Tu Biblioteca</h4>
+            </div>
+        </div>
+
+        <div class="secundario">
+            <div class="crearPlaylist">
+                <span class="material-symbols-outlined">add_box</span>
+                <h4>Crear Playlist</h4>
+            </div>
+            <div class="tusmegusta">
+                <span class="material-symbols-outlined">favorite</span>
+                <h4>Tus me gustas</h4>
+            </div>
+        </div>
+
+        <hr class="hr_sidepanel"></hr>
+
+        <div class="tusPlaylist">
+            <div class="playlist1">
+                <h4>Playlist1</h4>
+            </div>
+            <div class="playlist2">
+                <h4>Playlist2</h4>
+            </div>
+            <div class="playlist3">
+                <h4>Playlist3</h4>
+            </div>
+        </div>
+
+        <div class="download">
+            <span class="material-symbols-outlined">downloading</span>
+            <h4>Instalar aplicación</h4>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="top_index" id="top">
+            <div class="arrow">
+        <div class="backward">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+        </div>
+        
+        <div class="forward">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </div>
+    </div>
+        
+        <div class="profile">
+            <div class="pfpimage">
+                <img src="IMGSpotify/pfp.jpg" alt="profile pic"/>
+            </div>
+            <h4>Axel Caldera</h4>
+            <span class="material-symbols-outlined">arrow_drop_down</span>
+        </div>
+
+    </div>
+
+     <div class="mainmusic">
+        <div class="recentlisten">
+            <div class="recenth4">
+            <h4>Buenas tardes</h4>
+        </div>
+        <div class="recentPL">
+            <div class="section1">
+                <div class="recentPL1">
+                    <img src="IMGSpotify/theweeknd1.jpg" alt=""/>
+                    <div class="pl1text">
+                    <h4>Die For You (Remix)</h4>
+                    </div>
+                </div>
+
+            <div class="recentPL2">
+                <img src="IMGSpotify/theweeknd2.jpg" alt=""/>
+                <div class="pl2text">
+                <h4>StarBoy</h4>
+            </div>
+            </div>
+        
+            <div class="recentPL3">
+                <img src="IMGSpotify/theweeknd3.jpg" alt=""/>
+                <div class="pl3text">
+                <h4>After Hours</h4>
+                </div>
+            </div>
+
+        </div>
+            <div class="section2">
+            <div class="recentPL4">
+                <img src="IMGSpotify/theweeknd4.jpg" alt=""/>
+                <div class="pl4text">
+                <h4>Beauty Behind The Madness</h4>
+            </div>
+            </div>
+        
+            <div class="recentPL5">
+                <img src="IMGSpotify/theweeknd5.jpg" alt=""/>
+                <div class="pl5text">
+                <h4>Live At Lofi Stadium</h4>
+                </div>
+            </div>
+            <div class="recentPL6">
+                <img src="IMGSpotify/theweeknd6.jpg" alt=""/>
+                <div class="pl6text">
+                <h4>Trilogy</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+
+        <div class="made4u">
+
+            <div class="indicator1">
+            <div class="made4utext">
+                <h4>Hecho para Axel Caldera</h4>
+            </div>
+                <div class="showmore">
+                    <h4>Mostrar todo</h4>
+                </div>
+            </div>
+
+            <div class="mixgroup">
+            
+            <div class="mix1">
+                <div class="mix1img">
+                    <img src="IMGSpotify/tameimpala1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext1">
+                    <h4>The Slow Rush</h4>
+                </div>
+                <div class="mixA1">
+                    <h4>Tame Impala</h4>
+                </div>
+
+            </div>
+
+            <div class="mix2">
+                <div class="mix2img">
+                    <img src="IMGSpotify/tameimpala2.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext2">
+                    <h4>Currents</h4>
+                </div>
+                <div class="mixA2">
+                    <h4>Tame Impala</h4>
+                </div>
+
+            </div>
+
+            <div class="mix3">
+                <div class="mix3img">
+                    <img src="IMGSpotify/tameimpala3.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext3">
+                    <h4>Lonerism</h4>
+                </div>
+                <div class="mixA3">
+                    <h4>Tame Impala</h4>
+                </div>
+            </div>
+
+            <div class="mix4">
+                <div class="mix4img">
+                    <img src="IMGSpotify/tameimpala4.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext4">
+                    <h4>InnerSpeaker</h4>
+                </div>
+                <div class="mixA4">
+                    <h4>Tame Impala</h4>
+                </div>
+            </div>
+
+            <div class="mix5">
+                <div class="mix5img">
+                    <img src="IMGSpotify/tameimpala5.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext5">
+                    <h4>Live Versions</h4>
+                </div>
+                <div class="mixA5">
+                    <h4>Tame Impala</h4>
+                </div>
+            </div>
+
+            
+            <div class="mix6">
+                <div class="mix6img">
+                    <img src="IMGSpotify/tameimpala6.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext6">
+                    <h4>New Gold (feat.Tame Impala and Bootie Brown)</h4>
+                </div>
+                <div class="mixA6">
+                    <h4>Gorillaz, Tame Impala</h4>
+                </div>
+            </div>
+
+            <div class="mix7">
+                <div class="mix7img">
+                    <img src="IMGSpotify/tameimpala7.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext7">
+                    <h4>New Gold (feat.Tame Impala and Bootie Brown) [Dom Dolla Remix]</h4>
+                </div>
+                <div class="mixA7">
+                    <h4>Gorillaz, Tame Impala, Dom Dolla</h4>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+
+        <div class="made4u">
+
+            <div class="indicator1">
+            <div class="made4utext">
+                <h4>Tus mixes más escuchados</h4>
+            </div>
+                <div class="showmore">
+                    <h4>Mostrar todo</h4>
+                </div>
+            </div>
+
+            <div class="mixgroup">
+            
+            <div class="mix1">
+                <div class="mix1img">
+                    <img src="IMGSpotify/kendrick1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext1">
+                    <h4>Damn.</h4>
+                </div>
+                <div class="mixA1">
+                    <h4>Kendrick Lamar</h4>
+                </div>
+
+            </div>
+
+            <div class="mix2">
+                <div class="mix2img">
+                    <img src="IMGSpotify/kendrick2.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext2">
+                    <h4>Mr.Morale & The Big Steppers</h4>
+                </div>
+                <div class="mixA2">
+                    <h4>Kendrick Lamar</h4>
+                </div>
+
+            </div>
+
+            <div class="mix3">
+                <div class="mix3img">
+                    <img src="IMGSpotify/kendrick3.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext3">
+                    <h4>Black Panther The Album Music From And Inspired By</h4>
+                </div>
+                <div class="mixA3">
+                    <h4>Kendrick Lamar</h4>
+                </div>
+            </div>
+
+            <div class="mix4">
+                <div class="mix4img">
+                    <img src="IMGSpotify/kendrick4.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext4">
+                    <h4>untitled unamstered.</h4>
+                </div>
+                <div class="mixA4">
+                    <h4>Kendrick Lamar</h4>
+                </div>
+            </div>
+
+            <div class="mix5">
+                <div class="mix5img">
+                    <img src="IMGSpotify/kendrick5.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext5">
+                    <h4>To Pimp A Butterfly</h4>
+                </div>
+                <div class="mixA5">
+                    <h4>Kendrick Lamar</h4>
+                </div>
+            </div>
+
+            
+            <div class="mix6">
+                <div class="mix6img">
+                    <img src="IMGSpotify/kendrick6.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext6">
+                    <h4>good kid, m.A.A.d city (Deluxe)</h4>
+                </div>
+                <div class="mixA6">
+                    <h4>Kendrick Lamar</h4>
+                </div>
+            </div>
+
+            <div class="mix7">
+                <div class="mix7img">
+                    <img src="IMGSpotify/kendrick7.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext7">
+                    <h4>section.80</h4>
+                </div>
+                <div class="mixA7">
+                    <h4>Kendrick Lamar</h4>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+
+        <div class="made4u">
+
+            <div class="indicator1">
+            <div class="made4utext">
+                <h4>Escuchados recientemente</h4>
+            </div>
+                <div class="showmore">
+                    <h4>Mostrar todo</h4>
+                </div>
+            </div>
+
+            <div class="mixgroup">
+            
+            <div class="mix1">
+                <div class="mix1img">
+                    <img src="IMGSpotify/articmonkeys1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext1">
+                    <h4>AM</h4>
+                </div>
+                <div class="mixA1">
+                    <h4>Arctic Monkeys</h4>
+                </div>
+
+            </div>
+
+            <div class="mix2">
+                <div class="mix2img">
+                    <img src="IMGSpotify/articmonkeys2.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext2">
+                    <h4>Humbug</h4>
+                </div>
+                <div class="mixA2">
+                    <h4>Arctic Monkeys</h4>
+                </div>
+
+            </div>
+
+            <div class="mix3">
+                <div class="mix3img">
+                    <img src="IMGSpotify/articmonkeys3.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext3">
+                    <h4>Suck It And See</h4>
+                </div>
+                <div class="mixA3">
+                    <h4>Arctic Monkeys</h4>
+                </div>
+            </div>
+
+            <div class="mix4">
+                <div class="mix4img">
+                    <img src="IMGSpotify/articmonkeys4.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext4">
+                    <h4>Favourite Worst Nightmare</h4>
+                </div>
+                <div class="mixA4">
+                    <h4>Arctic Monkeys</h4>
+                </div>
+            </div>
+
+            <div class="mix5">
+                <div class="mix5img">
+                    <img src="IMGSpotify/articmonkeys5.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext5">
+                    <h4>The Car</h4>
+                </div>
+                <div class="mixA5">
+                    <h4>Arctic Monkeys</h4>
+                </div>
+            </div>
+
+            
+            <div class="mix6">
+                <div class="mix6img">
+                    <img src="IMGSpotify/articmonkeys6.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext6">
+                    <h4>Whatever People Say I Am, That's What I'm Not</h4>
+                </div>
+                <div class="mixA6">
+                    <h4>Arctic Monkeys</h4>
+                </div>
+            </div>
+
+            <div class="mix7">
+                <div class="mix7img">
+                    <img src="IMGSpotify/La_la_land.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext7">
+                    <h4>La la land (soundtrack)</h4>
+                </div>
+                <div class="mixA7">
+                    <h4>Justin Hurwitz, Justin Paul, Benj Pasek</h4>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+
+        <div class="made4u">
+
+            <div class="indicator1">
+            <div class="made4utext">
+                <h4>Pop Up: el mejor pop internacional</h4>
+            </div>
+                <div class="showmore">
+                    <h4>Mostrar todo</h4>
+                </div>
+            </div>
+
+            <div class="mixgroup">
+            
+            <div class="mix1">
+                <div class="mix1img">
+                    <img src="IMGSpotify/billie1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext1">
+                    <h4>Happier Than Ever</h4>
+                </div>
+                <div class="mixA1">
+                    <h4>Billie Eilish</h4>
+                </div>
+
+            </div>
+
+            <div class="mix2">
+                <div class="mix2img">
+                    <img src="IMGSpotify/ariana1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext2">
+                    <h4>thank u, next</h4>
+                </div>
+                <div class="mixA2">
+                    <h4>Ariana Grande</h4>
+                </div>
+
+            </div>
+
+            <div class="mix3">
+                <div class="mix3img">
+                    <img src="IMGSpotify/harry1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext3">
+                    <h4>Harry's House</h4>
+                </div>
+                <div class="mixA3">
+                    <h4>Harry Styles</h4>
+                </div>
+            </div>
+
+            <div class="mix4">
+                <div class="mix4img">
+                    <img src="IMGSpotify/miley1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext4">
+                    <h4>Plastic Hearts</h4>
+                </div>
+                <div class="mixA4">
+                    <h4>Miley Cyrus</h4>
+                </div>
+            </div>
+
+            <div class="mix5">
+                <div class="mix5img">
+                    <img src="IMGSpotify/sam1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext5">
+                    <h4>Gloria</h4>
+                </div>
+                <div class="mixA5">
+                    <h4>Sam Smith</h4>
+                </div>
+            </div>
+
+            
+            <div class="mix6">
+                <div class="mix6img">
+                    <img src="IMGSpotify/beach1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext6">
+                    <h4>Chit Chat</h4>
+                </div>
+                <div class="mixA6">
+                    <h4>Beach Weather</h4>
+                </div>
+            </div>
+
+            <div class="mix7">
+                <div class="mix7img">
+                    <img src="IMGSpotify/sza1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext7">
+                    <h4>SOS</h4>
+                </div>
+                <div class="mixA7">
+                    <h4>SZA</h4>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+
+        <div class="made4u">
+
+            <div class="indicator1">
+            <div class="made4utext">
+                <h4>Zod's Choice</h4>
+            </div>
+                <div class="showmore">
+                    <h4>Mostrar todo</h4>
+                </div>
+            </div>
+
+            <div class="mixgroup">
+            
+            <div class="mix1">
+                <div class="mix1img">
+                    <img src="IMGSpotify/daft1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext1">
+                    <h4>Random Access Memory</h4>
+                </div>
+                <div class="mixA1">
+                    <h4>Daft Punk</h4>
+                </div>
+
+            </div>
+
+            <div class="mix2">
+                <div class="mix2img">
+                    <img src="IMGSpotify/badbunny1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext2">
+                    <h4>Un Verano Sin Ti</h4>
+                </div>
+                <div class="mixA2">
+                    <h4>Bad Bunny</h4>
+                </div>
+
+            </div>
+
+            <div class="mix3">
+                <div class="mix3img">
+                    <img src="IMGSpotify/linkin1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext3">
+                    <h4>Meteora</h4>
+                </div>
+                <div class="mixA3">
+                    <h4>Linkin Park</h4>
+                </div>
+            </div>
+
+            <div class="mix4">
+                <div class="mix4img">
+                    <img src="IMGSpotify/acdc1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext4">
+                    <h4>Back In Black</h4>
+                </div>
+                <div class="mixA4">
+                    <h4>AC/DC</h4>
+                </div>
+            </div>
+
+            <div class="mix5">
+                <div class="mix5img">
+                    <img src="IMGSpotify/metallica1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext5">
+                    <h4>Ride The Lightning</h4>
+                </div>
+                <div class="mixA5">
+                    <h4>Metallica</h4>
+                </div>
+            </div>
+
+            
+            <div class="mix6">
+                <div class="mix6img">
+                    <img src="IMGSpotify/daft2.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext6">
+                    <h4>Discovery</h4>
+                </div>
+                <div class="mixA6">
+                    <h4>Daft Punk</h4>
+                </div>
+            </div>
+
+            <div class="mix7">
+                <div class="mix7img">
+                    <img src="IMGSpotify/post1.jpg" alt="album_cover"/>
+                </div>
+                <div class="mixtext7">
+                    <h4>Hollywood Bleeding</h4>
+                </div>
+                <div class="mixA7">
+                    <h4>Post Malone</h4>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    
+
+    <div class="InfoExtra">
+    
+        <div class="company">
+            <div class="companytitle">
+                <h4>Compañia</h4>
+            </div>
+            <div class="companytext">
+                
+                <div class="ct1">
+                <h4>Acerca de</h4>
+                </div>
+                
+                <div class="ct2">
+                <h4>Empleo</h4>
+                </div>
+               
+                <div class="ct2">
+                <h4>For the Record</h4>
+                </div>
+            
+            
+            </div>
+        </div>    
+
+        <div class="comunity">
+            <div class="comunitytitle">
+                <h4>Comunidades</h4>
+            </div>
+            <div class="comunitytext">
+                
+                <div class="ct1">
+                     <h4>Para artistas</h4>
+                 </div>
+                
+                 <div class="ct2">
+                     <h4>Desarrolladores</h4>
+                 </div>
+                
+                 <div class="ct2">
+                    <h4>Publicidad</h4> 
+                 </div>
+                
+                 <div class="ct2">
+                    <h4>Inversionistas</h4>
+                </div>
+                
+                <div class="ct2">
+                    <h4>Proveedores</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="linkstitle">
+                <h4>Enlaces útiles</h4>
+            </div>
+            <div class="linkstext">
+                <div class="ct1">
+                    <h4>Ayuda</h4>
+                </div>
+                
+                <div class="ct2">
+                    <h4>Aplicación móvil gratuita</h4>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="redes">
+            <div class="redesSociales">
+                <img src="IMGSpotify/instagram_logo.png" alt="Facebook Logo" width="20px"/>
+            </div>
+            <div class="redesSociales">
+                <img src="IMGSpotify/twitter_logo.png" alt="Facebook Logo" width="20px"/>
+            </div>
+            <div class="redesSociales">
+                <img src="IMGSpotify/facebook_logo.png" alt="Facebook Logo" width="20px"/>
+            </div>
+        </div>
+
+
+    </div>
+
+    <hr class="hr_main"/>
+
+    <div class="otrosterminos">
+        <div class="terminos">
+            
+            <div class="legal">
+             <h4>Legal</h4>
+            </div>
+            
+            <div class="CentroPriv">
+                <h4>Centro de privacidad</h4>
+            </div>
+            
+            <div class="PoliticaPriv">
+                <h4>Política de privacidad</h4>
+            </div>
+
+            <div class="Cookies">
+                <h4>Cookies</h4>
+            </div>
+
+            <div class="sobreAnuncios">
+                <h4>Sobre los anuncios</h4>
+            </div>
+
+        
+
+        <div class="copyright">
+            <h4>© 2023 Spotify AB</h4>
+        </div>
+    </div>
+
+    </div>
+  </div>
+
+    
+</div>
+
+<script>
+    const top1 = document.getElementById('top');
+
+    window.addEventListener('scroll',() =>{
+        if(window.scrollY >=50){
+            top1.classList.add('top_index2')
+        } else{
+            top1.classList.remove('top_index2')
+        }
+    })
+</script>
+
+
+
+</div>
+</body>
+</html>
